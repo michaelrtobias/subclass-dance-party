@@ -24,6 +24,7 @@ describe('rainbowDancer', function() {
     expect(lastColor).to.be.not.equal(currentColor);
   });
 
+
   describe('dance', function() {
     it('should call step at least once per second', function() {
       sinon.spy(rainbowDancer, 'step');
