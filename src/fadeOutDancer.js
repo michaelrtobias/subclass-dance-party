@@ -9,4 +9,5 @@ FadeOutDancer.prototype.step = function() {
   Dancer.prototype.step.call(this);
 
   this.$node.fadeOut();
+  this.$node.fadeIn();
 };
