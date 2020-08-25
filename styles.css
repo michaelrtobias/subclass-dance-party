@@ -26,6 +26,6 @@ body, a:link, a:visited, a:active{
   position:absolute;
 }
 
-#FadeDancer {
-  color: green;
+.FadeDancer {
+  border-color: CornflowerBlue;
 }
