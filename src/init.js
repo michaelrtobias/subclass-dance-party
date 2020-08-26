@@ -53,5 +53,10 @@ $(document).ready(function() {
     $('#lineDancing').show();
     $('#scatterBtn').hide();
   });
+
+  $(document).on('mouseover', '.BlinkyDancer', function () {
+    // alert('hi');
+    $('.BlinkyDancer').css('border-color', 'white');
+  });
 });
 

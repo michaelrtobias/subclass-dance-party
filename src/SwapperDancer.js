@@ -13,26 +13,6 @@ SwapperDancer.prototype.step = function() {
   Dancer.prototype.step.call(this);
   var me = this;
 
-  // this.left += Math.floor(Math.random() * 300 - 150);
-  // if (!window.isLineDancing) {
-  //   this.top += Math.floor(Math.random() * 300 - 150);
-  // } else {
-  //   this.top = 100;
-  // }
-  // if (this.left < 0) {
-  //   this.left = 50;
-  // }
-  // if (this.left > $('body').width()) {
-  //   this.left = $('body').width() - 50;
-  // }
-  // if (this.top < 0) {
-  //   this.top = 50;
-  // }
-  // if (this.top > $('body').height()) {
-  //   this.top = $('body').height() - 50;
-  // }
-  // this.$node.animate({ left: `${this.left}`, top: `${this.top}`});
-
   var closestDancer, shortestDistance;
   window.dancers.forEach(function(dancer) {
     if (dancer !== me) {
