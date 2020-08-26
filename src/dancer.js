@@ -32,6 +32,17 @@ Dancer.prototype.setPosition = function() {
   this.$node.css(styleSettings);
 };
 
+Dancer.prototype.lineUp = function() {
+  // this.$node.css('left', 100);
+  this.$node.animate({left: '100'});
+  this.left = 100;
+};
+
+Dancer.prototype.scatter = function() {
+  var newLeft = $('body').width() * Math.random();
+  this.$node.animate({left: `${newLeft}`});
+  this.left = newLeft;
+};
 // now that we have defined the dancer object, we can start setting up important parts of it by calling the methods we wrote
 // this one sets the position to some random default point within the body
 
