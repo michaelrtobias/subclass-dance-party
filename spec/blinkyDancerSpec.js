@@ -18,6 +18,13 @@ describe('blinkyDancer', function() {
     expect(blinkyDancer.$node.toggle.called).to.be.true;
   });
 
+  it('should line up with other nodes when line up is pushed', function () {
+    var blinkyDancer2 = new BlinkyDancer(20, 30, timeBetweenSteps);
+    blinkyDancer.lineUp();
+    blinkyDancer2.lineUp();
+    expect(blinkyDancer.left).to.equal(blinkyDancer2.left);
+  });
+
   describe('dance', function() {
     it('should call step at least once per second', function() {
       sinon.spy(blinkyDancer, 'step');
